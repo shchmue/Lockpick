@@ -125,7 +125,7 @@ namespace Common {
         draw_text(814, 452, RED, "MAKE AMERICA GREAT AGAIN!");
         
         draw_text(814, 500, YELLOW, "TRUMP 2020!");
-        draw_text(814, 545, WHITE, "ITS OKAY TO BE WHITE");
+        draw_text(814, 545, WHITE, "IT'S OKAY TO BE WHITE");
 
         if (  !(envIsSyscallHinted(0x60) &&     // svcDebugActiveProcess
                 envIsSyscallHinted(0x63) &&     // svcGetDebugEvent
