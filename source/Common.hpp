@@ -26,6 +26,7 @@
 #define RED     RGBA8_MAXALPHA(0xff, 0, 0)
 #define CYAN    RGBA8_MAXALPHA(0, 0xff, 0xff)
 #define YELLOW  RGBA8_MAXALPHA(0xff, 0xff, 0)
+#define WHITE   RGBA8_MAXALPHA(0xFF, 0xff, 0xFF)
 
 enum {
     Status_fail = 0,

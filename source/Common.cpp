@@ -121,13 +121,11 @@ namespace Common {
         memset(framebuf, 0, gfxGetFramebufferSize());
         
         draw_text(0x10, 0x020, YELLOW, "Lockpick! by shchmue");
-
-        draw_set_rect(814, 452 + 42 * 0, 450, 42, RGBA8_MAXALPHA(0xe7, 0x00, 0x00));
-        draw_set_rect(814, 452 + 42 * 1, 450, 42, RGBA8_MAXALPHA(0xff, 0x8c, 0x00));
-        draw_set_rect(814, 452 + 42 * 2, 450, 42, RGBA8_MAXALPHA(0xff, 0xef, 0x00));
-        draw_set_rect(814, 452 + 42 * 3, 450, 42, RGBA8_MAXALPHA(0x00, 0x81, 0x1f));
-        draw_set_rect(814, 452 + 42 * 4, 450, 42, RGBA8_MAXALPHA(0x00, 0x44, 0xff));
-        draw_set_rect(814, 452 + 42 * 5, 450, 42, RGBA8_MAXALPHA(0x76, 0x00, 0x89));
+        
+        draw_text(814, 452, RED, "MAKE AMERICA GREAT AGAIN!");
+        
+        draw_text(814, 500, YELLOW, "TRUMP 2020!");
+        draw_text(814, 545, WHITE, "ITS OKAY TO BE WHITE");
 
         if (  !(envIsSyscallHinted(0x60) &&     // svcDebugActiveProcess
                 envIsSyscallHinted(0x63) &&     // svcGetDebugEvent
