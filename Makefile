@@ -64,7 +64,7 @@ LIBS	:= -lnx -lmbedcrypto -lstdc++fs `freetype-config --libs`
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
-LIBDIRS	:= $(PORTLIBS) $(LIBNX) $(TOPDIR)/source/mbedtls
+LIBDIRS	:= $(TOPDIR)/source/mbedtls $(PORTLIBS) $(LIBNX)
 
 
 #---------------------------------------------------------------------------------
