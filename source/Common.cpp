@@ -130,13 +130,6 @@ namespace Common {
         draw_text(0x1e0, 0x040, CYAN, "Lockpick_RCM");
         draw_text(0x2a0, 0x040, YELLOW, "can get newer keys on firmware 7.0.0+!");
 
-        draw_set_rect(814, 452 + 42 * 0, 450, 42, FLAG_RED);
-        draw_set_rect(814, 452 + 42 * 1, 450, 42, FLAG_ORANGE);
-        draw_set_rect(814, 452 + 42 * 2, 450, 42, FLAG_YELLOW);
-        draw_set_rect(814, 452 + 42 * 3, 450, 42, FLAG_GREEN);
-        draw_set_rect(814, 452 + 42 * 4, 450, 42, FLAG_BLUE);
-        draw_set_rect(814, 452 + 42 * 5, 450, 42, FLAG_VIOLET);
-
         if (  !(envIsSyscallHinted(0x60) &&     // svcDebugActiveProcess
                 envIsSyscallHinted(0x63) &&     // svcGetDebugEvent
                 envIsSyscallHinted(0x65) &&     // svcGetProcessList

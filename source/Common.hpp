@@ -32,13 +32,6 @@
 #define CYAN    RGBA8_MAXALPHA(0, 0xff, 0xff)
 #define YELLOW  RGBA8_MAXALPHA(0xff, 0xff, 0)
 
-#define FLAG_RED    RGBA8_MAXALPHA(0xe7, 0x00, 0x00)
-#define FLAG_ORANGE RGBA8_MAXALPHA(0xff, 0x8c, 0x00)
-#define FLAG_YELLOW RGBA8_MAXALPHA(0xff, 0xef, 0x00)
-#define FLAG_GREEN  RGBA8_MAXALPHA(0x00, 0x81, 0x1f)
-#define FLAG_BLUE   RGBA8_MAXALPHA(0x00, 0x44, 0xff)
-#define FLAG_VIOLET RGBA8_MAXALPHA(0x76, 0x00, 0x89)
-
 class Key;
 
 typedef std::vector<u8> byte_vector;
