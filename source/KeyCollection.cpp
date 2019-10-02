@@ -245,10 +245,12 @@ void KeyCollection::get_keys() {
     // avoid crash on CFWs that don't use /switch folder
     if (!std::filesystem::exists("/switch"))
         std::filesystem::create_directory("/switch");
+    if (!std::filesystem::exists("/switch/Lockpick"))
+        std::filesystem::create_directory("/switch/Lockpick");
     // since Lockpick_RCM can dump newer keys, check for existing keyfile
     bool Lockpick_RCM_file_found = false;
-    if (std::filesystem::exists("/switch/prod.keys")) {
-        FILE *key_file = fopen("/switch/prod.keys", "r");
+    FILE *key_file = fopen("/switch/Lockpick/prod.keys", "r");
+    if (key_file) {
         char line[0x200];
         while (fgets(line, sizeof(line), key_file)) {
             if (strncmp("master_key_07", line, 13) == 0) {

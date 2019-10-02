@@ -191,8 +191,8 @@ namespace Common {
             }
         }
         // support biskeydump v7 dump
-        if (std::filesystem::exists("/device.keys")) {
-            FILE *key_file = fopen("/device.keys", "r");
+        FILE *key_file = fopen("/device.keys", "r");
+        if (key_file) {
             char line[0x100];
             while (fgets(line, sizeof(line), key_file) && !(sbk.found() && tsec.found())) {
                 if (strncmp("secure_boot_key", line, 15) == 0)
